@@ -51,3 +51,35 @@
 #slide5 {
   background-image: url('../images/5thslide.jpg');
 }
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  #slider {
+    height: 70vh; 
+  }
+
+  .slide-content h3 {
+    font-size: 2em; 
+  }
+
+  .slide-content p {
+    font-size: 1.4em; 
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  #slider {
+    height: 50vh; 
+  }
+
+  .slide-content h3 {
+    font-size: 1.5em; 
+  }
+
+  .slide-content p {
+    font-size: 1em; 
+  }
+}

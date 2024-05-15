@@ -30,7 +30,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 nav ul li {
@@ -40,7 +40,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
 nav ul li a:hover {
@@ -52,8 +52,8 @@ nav ul li a:hover {
   position: absolute;
   background-color: rgb(21, 30, 108);
   padding: 10px;
-  z-index: 1; 
-  width: max-content; 
+  z-index: 1;
+  width: max-content;
 }
 
 nav ul li:hover .dropdown {
@@ -66,8 +66,8 @@ nav ul li:hover .dropdown {
   background-color: rgb(21, 30, 108);
   padding: 10px;
   top: 0;
-  left: 100%; 
-  width: 100%; 
+  left: 100%;
+  width: 100%;
 }
 
 .dropdown li:hover .dropdown-submenu {
@@ -88,7 +88,7 @@ footer {
 
 footer nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 footer nav ul {
@@ -96,8 +96,8 @@ footer nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between; 
-  width: 100%; 
+  justify-content: space-between;
+  width: 100%;
 }
 
 footer nav ul li {
@@ -107,7 +107,7 @@ footer nav ul li {
 footer nav ul li a {
   text-decoration: none;
   color: #fff;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
 footer nav ul li a:hover {
@@ -129,58 +129,58 @@ p a {
   text-decoration: none;
 }
 
-h5{
+h5 {
   float: left;
   position: absolute;
 }
 
 .contact-info {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
-
 
 .contact-info section {
   flex: 0 0 50%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 0 20px;
 }
-
 
 .contact-info section p {
   color: goldenrod;
 }
 
-
 .contact-form {
   margin-top: 3em;
 }
 
-input, textarea{
+input,
+textarea {
   width: 20%;
 }
 
-/* Our Clients and Our Partners Sections */
-
-.our-clients, .our-partners {
+.our-clients,
+.our-partners {
   margin: 50px auto;
   text-align: center;
 }
 
-.our-clients h2, .our-partners h2 {
+.our-clients h2,
+.our-partners h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #333;
 }
 
-.client-logos, .partner-logos {
+.client-logos,
+.partner-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.client-logos img, .partner img {
+.client-logos img,
+.partner img {
   max-width: 150px;
   max-height: 100px;
   flex: 1 0 calc(16.666% - 20px);
@@ -197,4 +197,87 @@ input, textarea{
   margin-top: 10px;
   font-size: 1em;
   color: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  header div,
+  header nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  footer nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+
+  .hero img {
+    height: auto;
+  }
+
+  .contact-info section {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .logo img {
+    height: 80px;
+  }
+
+  nav ul li a {
+    padding: 8px;
+  }
+
+  footer nav ul li a {
+    padding: 8px;
+  }
+
+  .our-clients h2,
+  .our-partners h2 {
+    font-size: 2em;
+  }
+
+  .client-logos img,
+  .partner img {
+    max-width: 100px;
+    max-height: 70px;
+  }
+
+  footer p {
+    margin-top: 10px;
+  }
 }
