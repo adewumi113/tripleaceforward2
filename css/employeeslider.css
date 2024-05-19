@@ -27,6 +27,13 @@
 /* Media Queries for Responsiveness */
 
 /* Tablets */
+@media (min-width: 769px) and (max-width: 1023px){
+  
+  #employees {
+    height: 35vh; 
+  }
+}
+
 @media (max-width: 768px) {
   #employees {
     height: 26vh; 

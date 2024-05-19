@@ -202,7 +202,7 @@ textarea {
 /* Media Queries for Responsiveness */
 
 /* Tablets */
-@media (min-width: 769px) and (max-width: 1023px){
+@media (max-width: 1023px){
   
   nav ul li a {
     padding-right: 5px;

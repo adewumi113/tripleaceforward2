@@ -56,9 +56,15 @@
 /* Media Queries for Responsiveness */
 
 /* Tablets */
+@media (max-width: 1024px) {
+  #slider {
+    height: 30em; 
+  }
+}
+
 @media (max-width: 768px) {
   #slider {
-    height: 70vh; 
+    height: 25em; 
   }
 
   .slide-content h3 {
@@ -75,7 +81,7 @@
 /* Mobile Phones */
 @media (max-width: 480px) {
   #slider {
-    height: 23vh; 
+    height: 25vh; 
   }
 
   .slide-content h3 {
