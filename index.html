@@ -4,63 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Triple Aceforward - Home</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
 <header>
-  <div class="logo">
-    <a href="index.html"><img src="images/company-logo2.png" alt="Triple Aceforward Logo"></a>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li>
-        <a href="">Services</a>
-        <ul class="dropdown">
-          <li><a href="">Technological Solutions</a>
-            <ul class="dropdown-submenu">
-              <li><a href="services/customdevelopment.html">Custom Software Development</a></li>
-              <li><a href="services/systemintegration.html">System Integration</a></li>
-              <li><a href="services/cloudservice.html">Cloud Computing Services</a></li>
-              <li><a href="services/cybersecurity.html">Cybersecurity Solutions</a></li>
-              <li><a href="services/dataandbusiness.html">Data Analytics and Business Intelligence</a></li>
-            </ul>
-          </li>
-          <li><a href="">Consulting Services</a>
-            <ul class="dropdown-submenu">
-              <li><a href="services/strategyandadvise.html">Strategic Planning and Advisory</a></li>
-              <li><a href="services/digitaltransformation.html">Digital Transformation</a></li>
-              <li><a href="services/itinfrastructure.html">IT Infrastructure Optimization</a></li>
-              <li><a href="services/regulatorycompliance.html">Regulatory Compliance Assistance</a></li>
-              <li><a href="services/riskmanagement.html">Risk Management and Mitigation</a></li>
-            </ul>
-          </li>
-          <li><a href="">Transportation Services</a>
-            <ul class="dropdown-submenu">
-              <li><a href="services/bigtrucks.html">Big Trucks Transportation</a></li>
-              <li><a href="services/logisticsandsupply.html">Logistics and Supply Chain Management</a></li>
-              <li><a href="services/fleetmanagement.html">Fleet Management Solutions</a></li>
-              <li><a href="services/routeoptimization.html">Route Optimization</a></li>
-              <li><a href="services/lastmiledelivery.html">Last-Mile Delivery Services</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Clients</a>
-          <ul class="dropdown">
-            <li><a href="clients/privateclients.html">Private Clients</a></li>
-            <li><a href="clients/commercialclients.html">Commercial Clients</a></li>
-            <li><a href="clients/government.html">Government Agencies</a></li>
-          </ul>
-      </li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="careers.html">Careers</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark text-light justify-content-sm-start fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2 mr-auto logo">
+                <img src="images/company-logo2.png" alt="Triple Aceforward Logo">
+            </a>
+            <div class="navbar-toggler align-self-start border-0 outline-none" type="" id="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </div>
+
+            <div class="collapse navbar-collapse text-light d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-5 mt-lg-0 mobileNav"
+                 id="navbarSupportedContent">
+                <ul class="navbar-nav text-light align-self-stretch">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technological Solutions</a></li>
+                            <li><a class="dropdown-item" href="#">Consulting Services</a></li>
+                            <li><a class="dropdown-item" href="#">Transportation Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Clients
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Private Clients</a></li>
+                            <li><a class="dropdown-item" href="#">Commercial Clients</a></li>
+                            <li><a class="dropdown-item" href="#">Government Agencies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">Career</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay"></div>
 </header>
+
 
 <section id="slider">
     <div class="slide" id="slide1">
@@ -95,17 +95,19 @@
     </div>
 </section>
 
-<section id="content">
-  <h1>Welcome to Triple Aceforward</h1>
-  <p>At Triple Aceforward, we epitomize the fusion of innovation and excellence, spearheading transformative advancements in both the technology and transportation sectors. Our unwavering commitment lies in propelling businesses towards unparalleled success in the digital era through a multifaceted array of strategic technological solutions.</p>
-  <p>In the realm of technology, we serve our clients excellently, harnessing the power of cutting-edge advancements to craft bespoke software solutions that seamlessly integrate into our clients' operational frameworks. Our prowess extends to system integration, where we orchestrate the convergence of disparate systems into cohesive ecosystems, fostering efficiency and synergy. Leveraging the vast potential of cloud computing, we empower businesses to transcend conventional limitations, embracing scalability, agility, and cost-effectiveness.</p>
-  <p>Complementing our technological prowess is our unparalleled proficiency in transportation services, where we redefine the standards of efficiency and reliability. From the seamless transportation of goods via big trucks to the intricacies of logistics and supply chain management, we orchestrate flawless operations that transcend geographical boundaries. Our fleet management solutions optimize resource allocation, minimize downtime, and maximize productivity, driving operational excellence at every turn.</p>
-  <p>At the heart of our ethos lies a steadfast commitment to client-centricity, where every solution is meticulously tailored to address the unique challenges and aspirations of each client. Our collaborative approach fosters partnerships built on trust, transparency, and mutual success, as we navigate the complexities of the modern business landscape together.</p>
-  <p>Driven by a relentless pursuit of innovation and excellence spanning over 15 years, we have earned outstanding reputation in our respective domains, catalyzing positive change and delivering tangible results for our esteemed clientele. At Triple Aceforward, the future is not just a destination—it's a journey we embark on together, fueled by innovation, guided by excellence, and boundless in its possibilities.</p>
-</section>
+<div class="container">
+    <section id="content">
+        <h1>Welcome to Triple Aceforward</h1>
+        <p class="text-justify">At Triple Aceforward, we epitomize the fusion of innovation and excellence, spearheading transformative advancements in both the technology and transportation sectors. Our unwavering commitment lies in propelling businesses towards unparalleled success in the digital era through a multifaceted array of strategic technological solutions.
+        In the realm of technology, we serve our clients excellently, harnessing the power of cutting-edge advancements to craft bespoke software solutions that seamlessly integrate into our clients' operational frameworks. Our prowess extends to system integration, where we orchestrate the convergence of disparate systems into cohesive ecosystems, fostering efficiency and synergy. Leveraging the vast potential of cloud computing, we empower businesses to transcend conventional limitations, embracing scalability, agility, and cost-effectiveness.
+        Complementing our technological prowess is our unparalleled proficiency in transportation services, where we redefine the standards of efficiency and reliability. From the seamless transportation of goods via big trucks to the intricacies of logistics and supply chain management, we orchestrate flawless operations that transcend geographical boundaries. Our fleet management solutions optimize resource allocation, minimize downtime, and maximize productivity, driving operational excellence at every turn.
+        At the heart of our ethos lies a steadfast commitment to client-centricity, where every solution is meticulously tailored to address the unique challenges and aspirations of each client. Our collaborative approach fosters partnerships built on trust, transparency, and mutual success, as we navigate the complexities of the modern business landscape together.
+        Driven by a relentless pursuit of innovation and excellence spanning over 15 years, we have earned outstanding reputation in our respective domains, catalyzing positive change and delivering tangible results for our esteemed clientele. At Triple Aceforward, the future is not just a destination—it's a journey we embark on together, fueled by innovation, guided by excellence, and boundless in its possibilities.</p>
+    </section>
+</div>
 
 <footer>
-  <nav>
+  <nav class="container">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -158,6 +160,7 @@
   <h5>&copy; 2024 Triple Aceforward. All rights reserved.</h5>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script src="js/slider.js"></script>
 </body>
