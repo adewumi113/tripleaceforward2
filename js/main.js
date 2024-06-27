@@ -45,3 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function clearForm() {
   document.getElementById("contactForm").reset();
 }
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#navbar-toggler, .overlay').addEventListener('click', function () {
+        document.querySelector('.mobileNav').classList.toggle('open');
+        document.querySelector('.overlay').classList.toggle('open');
+    });
+})
